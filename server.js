@@ -45,7 +45,6 @@ const bookSchema = new mongoose.Schema({
 
 const Book = mongoose.model('Book', bookSchema);
 
-// POST /books - Add a new book
 app.post('/books', async (req, res) => {
   const { title, author, publishedYear, genre, ratings } = req.body;
 
